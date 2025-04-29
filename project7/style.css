@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color: hotpink;   */
+}
+
+#nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: pink; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+#nav1{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 2px;
+}
+
+.gola{
+    height: 22px;
+    width: 22px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+
+#nav2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+#nav2 h4{
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+
+#nav2 h4 span{
+    color: rgb(57, 57, 57);
+    margin-left: 25px;
+}
+
+#nav-bottom{
+    height: 70px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 50px;
+    gap: 40px;
+}
+
+#nav-bottom h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#content{
+    height: calc(100% - 150px);
+    width: 100%;
+    /* background-color: blanchedalmond; */
+}
+
+#text-content{
+    height: 40%;
+    width: 100%;
+    /* background-color: burlywood; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#text-content::-webkit-scrollbar{
+    /* display: none; */
+    background-color: transparent;
+    height: 7px;
+}
+
+#text-content::-webkit-scrollbar-thumb{
+     background-color: rgb(226, 179, 123);
+}
+
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 60%;
+    /* background-color: red; */
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elem h2{
+    font-size: 110px;
+    font-family:  "Maname", serif;
+    font-weight: 100;
+}
+
+#img-content{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+#img-content::-webkit-scrollbar{
+    display: none;
+}
+
+#img-content img{
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+

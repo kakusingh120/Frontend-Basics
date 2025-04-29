@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  cursive;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+#left #text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+#text h1{
+    font-size: 80px;
+    font-weight: 800;
+}
+#text p{
+    opacity: 0.7;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#text a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    opacity: 0.7;
+}
+
+#nav{
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   
+}
+
+#navr{
+    margin-right: 25px;
+}
+
+#navr a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#navr i{
+    color: royalblue;
+}
+
+#right{
+    background-color: rgb(127, 185, 255);
+    width: 60%;
+    height: 100%;
+   
+}
+
+#rtop{
+    background-color: rosybrown;
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+#rtopl{
+    background: url("orange2.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 55%;
+    height: 100%;
+}
+
+
+#rtopr{
+    background: url("orange3.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 45%;
+    height: 100%;
+
+}
+
+#rbottom{
+    background: url("orange4.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    width: 100%;
+}
+
+@media(max-width:600px){
+    #main{
+        flex-direction: column;
+    }
+
+    #main #left{
+        width: 100%;
+    }
+
+    #main #right{
+        width: 100%;
+    }
+}
